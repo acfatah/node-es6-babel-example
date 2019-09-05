@@ -8,6 +8,7 @@ const server = http.createServer((req, res) => {
   res.end('Hello World\n')
 }).listen(port, address)
 
-console.log(`Server running at ${protocol}://${address}:${port}/`)
+console.log(`Server running at "${protocol}://${address}:${port}/".`)
+console.log(`Running as "${process.env.NODE_ENV}".`)
 
 export default server
