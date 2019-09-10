@@ -1,4 +1,7 @@
-import http from 'http';
+import http from 'http'
+
+import dotenv from 'dotenv'
+dotenv.config()
 
 const protocol = 'http'
 const address = '127.0.0.1'
